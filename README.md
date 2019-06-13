@@ -8,7 +8,7 @@ The textbooks and the introductions of intelligent robot.
 
 ## Exam
 
-The middle exam questions.
+The midterm exam questions.
 
 ## Project
 
