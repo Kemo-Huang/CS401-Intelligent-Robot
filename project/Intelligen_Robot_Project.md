@@ -1,4 +1,4 @@
-# Gesture Recognition Based Intelligent HCI Robotic System
+# Gesture Recognition Based Intelligent Human-Computer-Interaction Mobile Robot Design
 
 Group Members: 赖鹏楠   童年  杨寒梅   黄珂邈   田闰心  林森
 
@@ -22,11 +22,11 @@ There is another problem we want to solve — security. The robot should not fol
 
 There are mainly two methods to achieve gesture recognition.
 
-##### 2.1 Glove-based
+##### 2.1 Glove-based gesture recognition
 
 In this approach, to determine the hand posture, the user needs to wear a glove with sensors attached to transform finger or flexions into electrical signals. Moreover, for body gesture, a body suit with a load of cables connecting to a computer is needed. To sum up, this kind of approach hinders the ease and naturalness of the user interaction in computer controlled environment. 
 
-##### 2.2 Vision-based
+##### 2.2 Vision-based gesture recognition
 
 Vision-based approaches are more user-friendly and do not require any extra devices on the user. That's why we would like to choose vision-based approaches using a kinect camera to implement the main part of our project. Although vision-based method could provide a natural way of user interaction and some more properties such as texture and color for analyzing gesture, there are still lots of challenges involved such as the complex background, lighting variation, noisy videos, besides system requirements such as recognition time, robustness, and computational efficiency[1].
 
@@ -39,6 +39,12 @@ Vision-based approaches are more user-friendly and do not require any extra devi
 | 2013-[8]    | Continuous                 | Hausdorff distance, Fingertip detection                      | HCI                             | Time cost inefficient                    |
 | 2013-[7]    | Isolated                   | Axis of least inertia, distance from centroid of the hand to fingertip | Complex dynamic ISL recognition | No complete recognition of sign language |
 | 2012-[6]    | Continuous                 | Haar classifier                                              | Virtual environment             | Less robust in recognition phase         |
+**2.3 Face recognition**
+
+Face recognition has been studied intensively for recent years. Now is a well developed technology in
+the computer vision field. The accuracy can beyond 99.80% (Tencent best CV team). The main research tendency now is to use the deep learning method for video based face recognition.
+For face tracking part, an algorithm named Tracking Learning Detection is suggested by Zdenek Kalal which is supposed to be stable, reliable and robust.
+
 ### 3 Problem Statement
 
 Although technology on gesture recognition has improved a lot, it doesn't apply into various fields. This paper proposed a more efficient and intelligent HCI (human-computer-interaction) based on gesture recognition.
@@ -103,7 +109,7 @@ This section gives a detailed description on the judgment criteria of this work.
 - Low Time Cost
 - Long Detect Distance
 
-**Motion control and tracking** are also the important part in this work for physical implementation. All the recognitions help the robot to decide where to go and the total quality of this work largely depends on how efficiently the robot is moving. We derived the criteria:
+**Motion control and collision avoidance** are also the important part in this work for physical implementation. All the recognitions help the robot to decide where to go and the total quality of this work largely depends on how efficiently the robot is moving. We derived the criteria:
 
 - Short Trajectory
 - High Robustness on Different Roads
