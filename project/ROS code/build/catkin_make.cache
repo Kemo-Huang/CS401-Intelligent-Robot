@@ -1,0 +1,2 @@
+face_follower:openni_tracker:usb_cam
+-DCATKIN_DEVEL_PREFIX=/home/yuyu/Openni/devel -DCMAKE_INSTALL_PREFIX=/home/yuyu/Openni/install -G Unix Makefiles
